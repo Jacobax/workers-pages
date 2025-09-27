@@ -1,0 +1,31 @@
+# GrokAI 规则列表 — 用于 Clash / ACL4SSR 等
+# 来源：基于 xAI Grok 服务的 API & 域名结构
+
+# 基本主域名
+x.ai
+grok.com            # Grok 的主页域名 2
+api.x.ai             # Grok API 接口域名 3
+*.api.x.ai
+
+# 可能的子域 /区域域名（按文档“区域端点”） 4
+us-east-1.api.x.ai
+eu-west-1.api.x.ai
+ap-northeast-1.api.x.ai
+# …（其他 region 的类似子域）
+
+# 静态资源 / 支持服务 /镜像、CDN 等（猜测 /预留）
+static.x.ai
+cdn.x.ai
+assets.x.ai
+*.x.ai
+
+# 若有 Web 搜索 /爬取 /图像接口的域（视未来 공개情况）
+search.x.ai
+images.x.ai
+
+# IP 段 / 辅助条目（示例／占位，用真实公布 IP 替换）
+# 203.0.113.0/24
+# 198.51.100.0/24
+
+# 规则尾注
+# End of GrokAI list
